@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    if: github.repository == 'bazelbuild/bazel-buildfarm'
+    if: github.repository == 'andrewrothstein/bazel-buildfarm'
     name: helm package and publish
     runs-on: ubuntu-latest
     steps:
