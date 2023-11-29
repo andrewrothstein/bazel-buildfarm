@@ -20,5 +20,6 @@ jobs:
           username: "${{ github.actor }}"
           password: "${{ github.token }}"
       - run: |-
+          helm dep up kubernetes/helm-charts/buildfarm
           helm package kubernetes/helm-charts/buildfarm
           ls -l *.tgz
