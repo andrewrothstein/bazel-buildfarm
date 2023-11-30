@@ -3,7 +3,7 @@ name: Package and Publish Helm Chart
 on:
   push:
     tags:
-      - *
+      - '*'
 
 jobs:
   build:
