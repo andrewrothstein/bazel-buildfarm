@@ -5,6 +5,9 @@ on:
     tags:
       - '*'
 
+env:
+  GH_TOKEN: ${{ github.token }}
+
 jobs:
   build:
     if: github.repository == 'andrewrothstein/bazel-buildfarm'
