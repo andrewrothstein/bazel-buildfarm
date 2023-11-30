@@ -2,8 +2,8 @@
 name: Package and Publish Helm Chart
 on:
   push:
-    branches:
-      - feature/*
+    tags:
+      - *
 
 jobs:
   build:
